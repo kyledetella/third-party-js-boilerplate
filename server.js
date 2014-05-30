@@ -5,7 +5,7 @@ var morgan = require('morgan');
 var express = require('express');
 var engines = require('consolidate');
 
-var App = function (options) {
+var Server = function (options) {
   this.options = options || {};
   this.appName = options.appName || 'app';
   this.port = options.port || process.env.PORT || 3031;
@@ -16,7 +16,7 @@ var App = function (options) {
   this.run();
 };
 
-_.extend(App.prototype, {
+_.extend(Server.prototype, {
   configureServer: function () {
     var app = this.app;
 
@@ -39,7 +39,9 @@ _.extend(App.prototype, {
     this.server = this.app.listen(this.port, function() {
       console.log('%s is listening on port %d', this.appName, this.server.address().port);
     }.bind(this));
+
+    console.log(this.server);
   }
 });
 
-module.exports = App;
+module.exports = Server;

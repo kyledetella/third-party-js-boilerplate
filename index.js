@@ -1,4 +1,4 @@
-var App = require('./server');
+var Server = require('./server');
 
 var appsConfig = [
   {
@@ -20,5 +20,5 @@ var appsConfig = [
 ];
 
 var apps = appsConfig.map(function (app) {
-  return new App(app);
+  return new Server(app);
 });
