@@ -1,0 +1,24 @@
+{
+  "name": "meetup-app",
+  "version": "0.0.0",
+  "description": "Lets serve up some iframes!",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npm run watch-js & npm run watch-server",
+    "watch-js": "watchify public/js/app.js -o public/js/app.built.js -dv",
+    "watch-server": "nodemon index.js",
+    "start": "nodemon index.js",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.3.2",
+    "morgan": "^1.1.1",
+    "consolidate": "^0.10.0",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.1.1"
+  }
+}
