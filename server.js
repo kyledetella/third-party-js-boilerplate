@@ -39,8 +39,6 @@ _.extend(Server.prototype, {
     this.server = this.app.listen(this.port, function() {
       console.log('%s is listening on port %d', this.appName, this.server.address().port);
     }.bind(this));
-
-    console.log(this.server);
   }
 });
 
