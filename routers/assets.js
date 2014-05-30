@@ -11,7 +11,7 @@ assetsRouter.get('/', function (req, res) {
 
 assetsRouter.get('/js/:filename', function (req, res) {
   var dir = path.resolve('public/js');
-  var jsfile = req.path.replace(/\/js\/|\.js/g, '') + '.js';
+  var jsfile = req.params.filename.replace(/\.js/g, '') + '.js';
 
   res.sendfile([dir, jsfile].join('/'));
 });
