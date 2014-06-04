@@ -32,6 +32,12 @@ npm start
 
 ## Client
 The client side javascript for both the host and iframe apps are setup to use [browserify](http://browserify.org/). 
+```javascript
+// For example:
+var myModule = require('path/to/my/module');
+
+myModule.isAGreatModule();
+```
 
 ## Pages
 - _HOST_ - `http://localhost:3031`
