@@ -30,6 +30,13 @@ npm start
 └── server.js
 ```
 
+## Public JSONP Apis
+- [github](https://developer.github.com/v3/)
+- [flickr](https://www.flickr.com/services/api/)
+- [twitter](https://dev.twitter.com/)
+- [nasa](http://data.nasa.gov/api-info/)
+- [vimeo](https://developer.vimeo.com/apis/advanced)
+
 ## Client
 The client side javascript for both the host and iframe apps are setup to use [browserify](http://browserify.org/). 
 ```javascript
