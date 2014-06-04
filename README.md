@@ -30,7 +30,7 @@ npm start
 └── server.js
 ```
 
-## Public JSONP Apis
+## Public Apis
 - [github](https://developer.github.com/v3/)
 - [flickr](https://www.flickr.com/services/api/)
 - [twitter](https://dev.twitter.com/)
