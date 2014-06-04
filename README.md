@@ -1,5 +1,6 @@
-Braintree Meetup 6/4/2014
-=========================
+Third Party JS Boilerplate
+==========================
+
 
 ## Installation
 ```
