@@ -21,7 +21,7 @@ _.extend(Server.prototype, {
     var app = this.app;
 
     app.use(morgan());
-    app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname + this.options.publicDir));
 
     app.set('views', __dirname + '/views');
     app.set('view engine', 'html');

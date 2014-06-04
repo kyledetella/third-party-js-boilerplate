@@ -6,7 +6,7 @@ var path = require('path');
 var assetsRouter = express.Router();
 
 assetsRouter.get('/', function (req, res) {
-  res.sendfile(path.resolve('public/iframes/index.html'));
+  res.sendfile(path.resolve('iframe-public/index.html'));
 });
 
 assetsRouter.get('/js/:filename', function (req, res) {

@@ -2,12 +2,13 @@ var Server = require('./server');
 
 var appsConfig = [
   {
-    appName: 'merchant-server',
+    appName: 'host-server',
     port: 3031,
     routing: function (app) {
-      var merchantRouter = require('./routers/merchant');
-      app.use('/merchant', merchantRouter);
-    }
+      var hostRouter = require('./routers/host');
+      app.use('/host', hostRouter);
+    },
+    publicDir: '/host-public'
   },
   {
     appName: 'asset-server',
@@ -15,7 +16,8 @@ var appsConfig = [
     routing: function (app) {
       var assetsRouter = require('./routers/assets');
       app.use('/assets', assetsRouter);
-    }
+    },
+    publicDir: '/iframe-public'
   }
 ];
 

@@ -4,11 +4,11 @@
   "description": "Lets serve up some iframes!",
   "main": "index.js",
   "scripts": {
-    "watch": "npm run watch-js & npm run watch-server",
-    "watch-js": "watchify public/js/app.js -o public/js/app.built.js -d -v",
+    "watch": "npm run watch-host-js & npm run watch-iframe-js & npm run watch-server",
+    "watch-host-js": "watchify host-public/js/app.js -o host-public/js/app.built.js -d -v",
+    "watch-iframe-js": "watchify iframe-public/js/iframe-app.js -o iframe-public/js/iframe-app.built.js -d -v",
     "watch-server": "nodemon index.js",
-    "start": "nodemon index.js",
-    "test": "test"
+    "start": "npm run watch"
   },
   "author": "",
   "license": "ISC",
